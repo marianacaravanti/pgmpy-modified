@@ -1,0 +1,12 @@
+true positive:  11.0
+true negative:  69.0
+false positive:  18.0
+false negative:  23.0
+Taxa de verdadeiro positivo:  0.323529411765
+Taxa de falso positivo:  0.206896551724
+Taxa de verdadeiro negativo:  0.793103448276
+Acuracia (taxa de acerto):  0.661157024793
+Taxa de erro:  0.338842975207
+Precisao:  0.379310344828
+Indice Rand:  0.661157024793
+Indice Jackard:  0.211538461538

@@ -1,0 +1,13 @@
+Este diretório contém todas as redes obtidas por meio dos modelos de redes Bayesianas e redes Bayesianas dinâmicas, utilizando dados de expressão gênica sintéticos, e os dados de expressão pertencentes a rede da levedura Saccharomyces cereviseae.
+
+Os dados de expressão gênica sintéticos foram retirados de DREAM4
+Challenge - In Silico Network Challenge (Marbach et al., 2010). Os arquivos utilizados foram os de séries temporais (time series), que mostram como uma rede responde a uma perturbação e como ela relaxa após a remoção da perturbação. Os dados são divididos em duas categorias: arquivos de expressão gênica contendo 10 genes com 5 séries temporais diferentes e, arquivos que contém 100 genes e 10 séries temporais.
+Cada série temporal possui 21 amostras. A condição inicial sempre corresponde a um estado estacionário. No tempo t = 0, a perturbação é aplicada como descrita a seguir: a primeira metade das séries temporais mostra a resposta da rede à perturbação. A partir da segunda metade, a perturbação é removida, e então os níveis de expressão gênica voltam a partir da perturbação para o estado estacionário.
+
+Quanto aos dados da levedura, foram levados em consideração os 11 genes presentes no ciclo celular proposto por Li et al. (2004). Os genes são Cln3, SBF, Sic1, MBF, Cln1, Clb5, Cdh1, Clb1, Mcm1, Cdc20 e
+Swi5. Foram utilizados dados de um catálogo de genes, tal que os dados são divididos em experimentos, projetados para examinar os efeitos da indução de alguns componentes que interagem com os genes. Cada experimento pode ser denominado como uma série temporal, contendo uma
+determinada quantidade de amostras. A primeira série temporal é composta por duas amostras com a adição do componente cln3. A segunda série temporal contém a indução do componente clb2, sendo composta por
+duas amostras. A terceira série temporal contém adição do fator alpha, sendo composta por 18 amostras. A quarta série temporal possui adição do componente cdc15, contando com 24 amostras. A quinta série temporal é caracterizada pela adição do componente cdc28, possuindo 17 amostras. Por último, temos a série temporal de elutriação, composta por 14
+amostras. Mais informações a respeito dos experimentos podem ser vistas em Spellman et al. (1998).
+
+Os resultados estão divididos por categorias. No diretório "Bayesian network" estão as redes inferidas utilizando o modelo de redes Bayesianas estático, levando em consideração a modificação proposta que busca deslocar a coluna do gene alvo quando é realizado o cálculo da pontuação da estrutura candidata, levando em consideração o aspecto temporal dos dados de expressão gênica. No diretório "dynamic Bayesian network" estão as redes inferidas utilizando o modelo de redes Bayesianas dinâmicas.
